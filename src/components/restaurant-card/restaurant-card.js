@@ -5,6 +5,15 @@ import './restaurant-card.css'
 import defaultImage from '../../media/default.png';
 
 class RestaurantCard extends Component {
+  constructor(props, context) {
+    super(props, context);
+    this.buttonClicked = this.buttonClicked.bind(this);
+  }
+
+  buttonClicked() {
+      alert('Restaurant Card Clicked');
+  }
+
   render() {
     
     return (
@@ -20,7 +29,7 @@ class RestaurantCard extends Component {
           <p className="fc-restaurant-address-card">Restaurant Address</p>
 
           <div className="fc-modal-button" 
-               onClick={alert('Restaurant Card Clicked')}></div>
+               onClick={this.buttonClicked}></div>
 
         </div>
     );
