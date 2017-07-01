@@ -28,7 +28,7 @@ class App extends Component {
     render() {
 
 		const restaurantsList = Data.value.results;
-console.log(restaurantsList)
+
 		return (
 			<div id="fc">
 
