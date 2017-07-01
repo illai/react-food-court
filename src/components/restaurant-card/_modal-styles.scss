@@ -1,0 +1,16 @@
+@import '../../variables';
+
+.modal-dialog {
+    direction: rtl;
+    font-family: $main-font;
+    color: #b82d39;
+
+
+    .close {
+        float: none;
+    }
+}
+
+.modal-title {
+
+}

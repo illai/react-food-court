@@ -21,8 +21,8 @@
     .fc-logo-bg-card {
         margin: 0 -1rem;
         background: rgba(0,0,0,.2);
-        padding: 1rem 0;
-        height: 8.5rem;
+        padding: .5rem 0;
+        height: 9rem;
         box-shadow: 0 .2rem 0 0 $shadow-color;
     }
 
@@ -61,6 +61,15 @@
         width: 100%;
         top: 0;
         left: 0;
+    }
+
+    .fc-close-modal {
+        width: 3rem;
+        height: 3rem;
+
+        img {
+            max-width: 100%;
+        }
     }
 
     h2 {

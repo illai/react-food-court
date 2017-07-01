@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-
-// Importing Components
-import LoadingScreen from './components/loading-screen/loading-screen'
+import LoadingScreen from './components/loading-screen/loading-screen';
 import FilteringArea from './components/filtering-area/filtering-area';
 import RestaurantsList from './components/restaurants-list/restaurants-list';
-
 import './App.css';
 
 class App extends Component {
