@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+// Importing Components
+import FilteringArea from './components/filtering-area/filtering-area';
+import RestaurantsList from './components/restaurants-list/restaurants-list';
+
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>שלום ריאקט</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+
+    render() {
+
+		return (
+			<div id="fc">
+				<FilteringArea />
+				<RestaurantsList />
+			</div>
+		);
+	}
 }
 
 export default App;

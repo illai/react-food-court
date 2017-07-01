@@ -14,6 +14,7 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   height: 100%;
+  font-size: 10px;
 }
 
 /* Sections
@@ -26,7 +27,6 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /**
@@ -245,7 +245,6 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */

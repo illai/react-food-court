@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
+#fc .fc-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a1312;
+  height: 5rem;
+  padding: 2rem;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0.4rem 0.1rem 0.1rem rgba(206, 5, 5, 0.3);
+  z-index: 1; }
+  #fc .fc-header .fc-title {
+    font-size: 2.4rem;
+    margin-left: 1rem;
+    font-weight: 200; }
+  #fc .fc-header .fc-input-field {
+    transition: transform 500ms;
+    transform: scale(1);
+    border-radius: .5rem;
+    background-color: #fefefe;
+    border: .1rem solid #cacaca;
+    color: #0a1312;
+    font-size: 1.6rem;
+    padding: .5rem .9rem;
+    width: 26rem;
+    font-family: "Assistant", sans-serif; }
+  #fc .fc-header .fc-input-field:focus {
+    background: #fff;
+    box-shadow: 0 0 .8rem #cec9c9;
+    transform: scale(1.05); }
