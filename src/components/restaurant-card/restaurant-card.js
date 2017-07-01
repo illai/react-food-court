@@ -15,18 +15,28 @@ class RestaurantCard extends Component {
   }
 
   render() {
+
+    const restaurant = this.props.restaurant;
+
+    const id = restaurant.id;
+    const name = restaurant.title.he_IL;
+    const street = restaurant.address.street;
+    const streetNum = restaurant.address.number;
+    const city = restaurant.address.city;
+    const address = street + ' ' + streetNum + ', ' + city;
+    const pic = restaurant.picture ? 'https:' + restaurant.picture : defaultImage;
     
     return (
         <div className={"fc-restaurant-card"}>
 
           <div className="fc-logo-bg-card">
             <div className="fc-logo-wrapper-card">
-                <img src={defaultImage} />
+                <img src={pic} alt={id} />
             </div>
           </div>
 
-          <h3 className="fc-restaurant-name-card">Restaurant Name</h3>
-          <p className="fc-restaurant-address-card">Restaurant Address</p>
+          <h3 className="fc-restaurant-name-card">{name}</h3>
+          <p className="fc-restaurant-address-card">{address}</p>
 
           <div className="fc-modal-button" 
                onClick={this.buttonClicked}></div>

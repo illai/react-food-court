@@ -3,6 +3,14 @@ import React, { Component } from 'react';
 import './filtering-area.css';
 
 class FilteringArea extends Component {
+    constructor(props) {
+        super(props);
+        this.handleFilterTextInputChange = this.handleFilterTextInputChange.bind(this);
+    }
+
+    handleFilterTextInputChange(e) {
+        this.props.onFilterTextInput(e.target.value);
+    }
 
     render() {
         return (
@@ -12,7 +20,9 @@ class FilteringArea extends Component {
                     <input 
                         type="text"
                         className="fc-input-field"
-                        placeholder="הקלד\י שם מסעדה" />
+                        placeholder="הקלד\י שם מסעדה"
+                        value={this.props.filterText}
+                        onChange={this.handleFilterTextInputChange} />
                 </form>
 
             </div>
