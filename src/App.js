@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 // Importing Components
+import LoadingScreen from './components/loading-screen/loading-screen'
 import FilteringArea from './components/filtering-area/filtering-area';
 import RestaurantsList from './components/restaurants-list/restaurants-list';
-
-import Data from './data.json';
 
 import './App.css';
 
@@ -19,6 +18,24 @@ class App extends Component {
     	this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
 	}
 
+	componentDidMount() {
+
+		fetch('https://spice-prod.appspot.com/v1.1', {
+			method: 'post', 
+			headers: {
+			"Content-Type": "application/json"
+			}, 
+			body: JSON.stringify({
+				type: 'search', 
+				filter: {
+				distributorId: 'food.co.il'
+				} 
+			})  
+		}).then( r => r.json() )
+		.then( (allRestaurants)  => { this.setState({ allRestaurants }); })
+		.catch( e => console.log(e) );
+	}
+
 	handleFilterTextInput(filterText) {
 		this.setState({
 			filterText: filterText
@@ -27,8 +44,16 @@ class App extends Component {
 
     render() {
 
-		const restaurantsList = Data.value.results;
-console.log(restaurantsList)
+		if (!this.state.allRestaurants) {
+    		return (
+				<div id="fc">
+					<LoadingScreen />
+				</div>
+			);
+    	}
+
+		const restaurantsList = this.state.allRestaurants.value.results;
+
 		return (
 			<div id="fc">
 

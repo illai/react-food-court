@@ -1,9 +1,15 @@
 
 @import './variables';
 
+
 #fc {
-  font-family: $main-font;
-  direction: rtl;
-  height: 100%;
-  background: #f4f4f4;
+    font-family: $main-font;
+    direction: rtl;
+    height: 100%;
+    background: #f4f4f4;
+
+    @import './components/loading-screen/loading-screen';
+    @import './components/filtering-area/filtering-area';
+    @import './components/restaurants-list/restaurants-list';
+    @import './components/restaurant-card/restaurant-card';
 }

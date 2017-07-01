@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.loading-screen {
+    width: 100%;
+    height: 100%;
+    background: $darkest;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+
+    .loading-screen-inner {
+        max-width: 60%;
+        color: #fefefe;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 200;
+    }
+}

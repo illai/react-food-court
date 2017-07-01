@@ -1,6 +1,6 @@
 @import '../../variables';
 
-#fc .fc-restaurant-card {
+.fc-restaurant-card {
     transition: margin 300ms ease-out;
     display: flex;
     flex-direction: column;
@@ -70,5 +70,4 @@
         padding-bottom: .5rem;
         border-bottom: 1px dashed $darkest;
     }
-
 }

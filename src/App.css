@@ -1,6 +1,134 @@
 @import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
 #fc {
   font-family: "Assistant", sans-serif;
   direction: rtl;
   height: 100%;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  /* Custom, iPhone Retina */
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  #fc .loading-screen {
+    width: 100%;
+    height: 100%;
+    background: #0a1312;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl; }
+    #fc .loading-screen .loading-screen-inner {
+      max-width: 60%;
+      color: #fefefe;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 200; }
+  #fc .fc-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a1312;
+    height: 5rem;
+    padding: 2rem;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0.4rem 0.1rem 0.1rem rgba(206, 5, 5, 0.3);
+    z-index: 1; }
+    #fc .fc-header .fc-title {
+      font-size: 2.4rem;
+      margin-left: 1rem;
+      font-weight: 200; }
+    #fc .fc-header .fc-input-field {
+      transition: transform 500ms;
+      transform: scale(1);
+      border-radius: .5rem;
+      background-color: #fefefe;
+      border: .1rem solid #cacaca;
+      color: #0a1312;
+      font-size: 1.6rem;
+      padding: .5rem .9rem;
+      width: 26rem;
+      font-family: "Assistant", sans-serif; }
+    #fc .fc-header .fc-input-field:focus {
+      background: #fff;
+      box-shadow: 0 0 .8rem #cec9c9;
+      transform: scale(1.05); }
+  #fc .restaurans-list {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-rows: auto;
+    padding: 2rem; }
+  @media only screen and (min-width: 320px) {
+    #fc .restaurans-list {
+      grid-template-columns: 1fr; } }
+  @media only screen and (min-width: 480px) {
+    #fc .restaurans-list {
+      grid-template-columns: 1fr 1fr; } }
+  @media only screen and (min-width: 768px) {
+    #fc .restaurans-list {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media only screen and (min-width: 992px) {
+    #fc .restaurans-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  @media only screen and (min-width: 1200px) {
+    #fc .restaurans-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+  #fc .fc-restaurant-card {
+    transition: margin 300ms ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+    background: #FED994;
+    border-radius: 0.2rem;
+    text-align: center;
+    box-shadow: 0.2rem 0.2rem 0 0 rgba(206, 5, 5, 0.3);
+    position: relative;
+    color: #b82d39; }
+    #fc .fc-restaurant-card:hover {
+      margin: -1rem 0 1rem; }
+    #fc .fc-restaurant-card .fc-logo-bg-card {
+      margin: 0 -1rem;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1rem 0;
+      height: 8.5rem;
+      box-shadow: 0 0.2rem 0 0 rgba(206, 5, 5, 0.3); }
+    #fc .fc-restaurant-card .fc-logo-wrapper-card {
+      padding: .5rem;
+      border-radius: 0.2rem;
+      width: 45%;
+      margin: 0 auto 0;
+      height: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #fc .fc-restaurant-card .fc-logo-wrapper-card img {
+        max-width: 100%;
+        max-height: 100%; }
+    #fc .fc-restaurant-card .fc-restaurant-name-card {
+      font-size: 1.6rem;
+      margin: 1rem 0 .5rem;
+      text-align: right; }
+    #fc .fc-restaurant-card .fc-restaurant-address-card {
+      font-size: 1.4rem;
+      margin: .5rem 0;
+      text-align: right; }
+    #fc .fc-restaurant-card .fc-modal-button {
+      position: absolute;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0; }
+    #fc .fc-restaurant-card h2 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin: .5rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px dashed #0a1312; }

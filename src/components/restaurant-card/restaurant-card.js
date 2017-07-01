@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-
-import './restaurant-card.css'
-
 import defaultImage from '../../media/default.png';
+import '../../App.css';
 
 class RestaurantCard extends Component {
   constructor(props, context) {
@@ -24,14 +22,14 @@ class RestaurantCard extends Component {
     const streetNum = restaurant.address.number;
     const city = restaurant.address.city;
     const address = street + ' ' + streetNum + ', ' + city;
-    const pic = restaurant.picture ? 'https:' + restaurant.picture : defaultImage;
+    const pic = restaurant.picture ? restaurant.picture : defaultImage;
     
     return (
         <div className={"fc-restaurant-card"}>
 
           <div className="fc-logo-bg-card">
             <div className="fc-logo-wrapper-card">
-                <img src={pic} alt={id} />
+                <img src={pic} alt={id + ' Logo'} />
             </div>
           </div>
 

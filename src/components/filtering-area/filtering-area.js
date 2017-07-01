@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import './filtering-area.css';
+import '../../App.css';
 
 class FilteringArea extends Component {
     constructor(props) {

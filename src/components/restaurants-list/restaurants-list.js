@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-
 import RestaurantCard from '../restaurant-card/restaurant-card';
-
-import './restaurants-list.css';
+import '../../App.css';
 
 class RestaurantsList extends Component {
 

@@ -1,6 +1,6 @@
 @import '../../variables';
 
-#fc .fc-header {
+.fc-header {
 
     display: flex;
     justify-content: center;
@@ -38,6 +38,4 @@
         box-shadow: 0 0 .8rem #cec9c9;
         transform: scale(1.05);
     }
-
- 
 }
