@@ -1,7 +1,8 @@
 # Introduction to React by building a food court app #
 
 ## General Description ##
-This lesson should impart FED developers which are not working with react a basic understanding and toolbox to start working and create React apps
+This lesson should impart FED developers which are not working with react a basic understanding and toolbox to start working and create React apps.
+Each section has a related branch representing the parts that were added to the code.
  
 ## Prerequisits ##
 I am assuming the student is already:
@@ -51,7 +52,6 @@ We will show the done project, explore its parts and features. We will go to cre
  
 **Related branch:** *setting-up-environment*
 
-*~20min*
  
 ## Introduction to React components ##
 ### Subjects: ###
@@ -66,7 +66,6 @@ In this part we will make introduction to components see how we create and nest 
 
 **Related branch:** *adding-and-nesting-components*
 
-*~20min*
  
 ## Using props and states ##
 ### Subjects: ###
@@ -85,7 +84,6 @@ In this part we will start to add data to our components, we will see how data i
  
 **Related branch:** *adding-functionality*
 
-*~30min*
  
 ## Fetching real data ##
 ### Subjects: ###
@@ -99,7 +97,6 @@ In this part we will learn how to get and use data from XMLHttpRequest in React 
  
 **Related branch:** *making-XHR-call*
 
-*~15min*
  
 ## Adding third party libraries ##
 ### Subjects: ###
@@ -114,12 +111,10 @@ In this part we will see how to add and use third party libraries and components
  
 **Related branch:** *adding-third-party-library*
 
-*~15min*
 
 ## Wrapping it all up ##
 1. Creating and adding components to the popup modal (hands on)
  
 This part will be a hands on which in the students will implement what they have learned by creating and adding components to the popup modal.
 
-*~30min*
 
