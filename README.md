@@ -2,7 +2,11 @@
 
 ## General Description ##
 This lesson should impart FED developers which are not working with react a basic understanding and toolbox to start working and create React apps.
+
 Each section has a related branch representing the parts that were added to the code.
+
+To see run the repo please clone and run *npm start*.
+If you are getting an error npm-run-all is not recognized please run: *npm install -g npm-run-all* 
  
 ## Prerequisits ##
 I am assuming the student is already:
