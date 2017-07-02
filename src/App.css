@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Assistant:200,300,400,600");
 #fc {
   font-family: "Assistant", sans-serif;
   direction: rtl;
@@ -127,11 +129,6 @@
       width: 100%;
       top: 0;
       left: 0; }
-    #fc .fc-restaurant-card .fc-close-modal {
-      width: 3rem;
-      height: 3rem; }
-      #fc .fc-restaurant-card .fc-close-modal img {
-        max-width: 100%; }
     #fc .fc-restaurant-card h2 {
       font-size: 1.8rem;
       font-weight: 400;
@@ -145,3 +142,85 @@
   color: #b82d39; }
   .modal-dialog .close {
     float: none; }
+
+.modal-body {
+  max-height: 80vh; }
+
+.fc-restaurant-details {
+  text-align: right;
+  height: 40rem;
+  font-family: "Assistant", sans-serif; }
+  .fc-restaurant-details .details-top {
+    height: 30%; }
+  .fc-restaurant-details .fc-logo-wrapper {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    height: calc(100% - 1rem);
+    background: rgba(0, 0, 0, 0.2);
+    padding: .5rem;
+    box-shadow: 0.2rem 0.2rem 0 0 rgba(206, 5, 5, 0.3);
+    border-radius: .2rem; }
+  .fc-restaurant-details .fc-logo-wrapper img {
+    max-width: 100%;
+    max-height: 100%; }
+  .fc-restaurant-details .fc-details-wrapper {
+    margin-right: 5%;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-direction: column; }
+    .fc-restaurant-details .fc-details-wrapper .fc-phone-num {
+      margin-top: 1rem; }
+    .fc-restaurant-details .fc-details-wrapper .fc-icon {
+      width: 1.5rem;
+      display: inline-block;
+      height: 1.5rem;
+      vertical-align: middle; }
+    .fc-restaurant-details .fc-details-wrapper .fc-icon img {
+      width: 100%; }
+    .fc-restaurant-details .fc-details-wrapper .fc-phone-num .num,
+    .fc-restaurant-details .fc-details-wrapper .fc-address {
+      font-size: 1.2rem; }
+    .fc-restaurant-details .fc-details-wrapper .fc-address {
+      margin-top: 1rem; }
+
+.fc-top-items-wrapper {
+  border-bottom: .2rem solid #3c302e;
+  margin-top: 1rem;
+  height: calc(70% - 2.5rem); }
+  .fc-top-items-wrapper .fc-top-items-title {
+    font-size: 1.8rem;
+    color: #3c302e;
+    border-bottom: .2rem solid #3c302e;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem; }
+
+.fc-inner-items-wrapper {
+  max-height: calc(100% - 5.5rem);
+  overflow-y: scroll;
+  padding-right: .3rem; }
+
+.fc-menu-item-wrapper {
+  margin-bottom: 1rem; }
+
+.fc-menu-item-wrapper {
+  height: 5rem;
+  display: flex;
+  align-items: center; }
+  .fc-menu-item-wrapper .fc-menu-item-image {
+    box-shadow: 0.2rem 0.2rem 0 0 rgba(206, 5, 5, 0.3);
+    height: 100%;
+    border-radius: .2rem;
+    overflow: hidden;
+    margin-left: 1rem; }
+  .fc-menu-item-wrapper .fc-menu-item-image img {
+    max-width: 100%;
+    height: 100%; }
+
+.fc-item-name {
+  margin-left: 1rem;
+  font-size: 1.4rem; }
+
+.fc-item-price {
+  font-weight: bold;
+  font-size: 1.2rem; }

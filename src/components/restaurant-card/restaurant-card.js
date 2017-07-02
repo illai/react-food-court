@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal } from 'react-bootstrap';
+import RestaurantDetails from '../restaurant-details/restaurant-details';
 import defaultImage from '../../media/default.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../App.css';
@@ -53,7 +54,7 @@ const RestaurantCard = React.createClass({
                         <Modal.Title>{name}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        Hello Modal
+                        <RestaurantDetails details={restaurant} />
                     </Modal.Body>
                 </Modal>
             </div>

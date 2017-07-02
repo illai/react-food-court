@@ -1,0 +1,24 @@
+.fc-top-items-wrapper {
+    border-bottom: .2rem solid #3c302e;
+    margin-top: 1rem;
+    height: calc(70% - 2.5rem);
+
+    .fc-top-items-title {
+        font-size: 1.8rem;
+        color: #3c302e;
+        border-bottom: .2rem solid #3c302e;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.fc-inner-items-wrapper {
+    max-height: calc(100% - 5.5rem);
+    overflow-y: scroll;
+    padding-right: .3rem;
+}
+
+.fc-menu-item-wrapper {
+    margin-bottom: 1rem;
+}

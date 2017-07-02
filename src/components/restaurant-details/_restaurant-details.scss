@@ -1,0 +1,60 @@
+@import '../../variables';
+
+.fc-restaurant-details {
+    text-align: right;
+    height: 40rem;
+    font-family: $main-font;
+
+    .details-top {
+        height: 30%;
+    }
+
+    .fc-logo-wrapper {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        height: calc(100% - 1rem);
+        background: rgba(0,0,0,.2);
+        padding: .5rem;
+        box-shadow: .2rem .2rem 0 0 $shadow-color;
+        border-radius: .2rem;
+    }
+
+    .fc-logo-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .fc-details-wrapper {
+        margin-right: 5%;
+        display: inline-flex;
+        vertical-align: middle;
+        flex-direction: column;
+
+        .fc-phone-num {
+            margin-top: 1rem;
+        }
+
+        .fc-icon {
+            width: 1.5rem;
+            display: inline-block;
+            height: 1.5rem;
+            vertical-align: middle;
+        }
+
+        .fc-icon img{
+            width: 100%;
+        }
+
+        .fc-phone-num .num,
+        .fc-address {
+            font-size: 1.2rem;
+        }
+
+        .fc-address {
+            margin-top: 1rem;
+        }
+    }   
+}
+
+

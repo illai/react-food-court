@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.fc-menu-item-wrapper {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+
+    .fc-menu-item-image {
+        box-shadow: .2rem .2rem 0 0 $shadow-color;
+        height: 100%;
+        border-radius: .2rem;
+        overflow: hidden;
+        margin-left: 1rem;
+    }
+
+    .fc-menu-item-image img{
+        max-width: 100%;
+        height: 100%;
+    }
+} 
+
+.fc-item-name {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+
+.fc-item-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
