@@ -5,8 +5,7 @@ This lesson should impart FED developers which are not working with react a basi
 
 Each section has a related branch representing the parts that were added to the code.
 
-To see run the repo please clone and run *npm start*.
-If you are getting an error npm-run-all is not recognized please run: *npm install -g npm-run-all* 
+To run the repo please clone and run *npm-nstall* and then *npm start*.
  
 ## Prerequisits ##
 I am assuming the student is already:
